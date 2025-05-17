@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Compressor</title>
+</head>
+<body>
+    <h1>PDF Compressor</h1>
+    <form action="/compress" method="post" enctype="multipart/form-data">
+        <label for="pdf_file">Upload PDF:</label>
+        <input type="file" name="pdf_file" required><br><br>
+
+        <h3>File Size</h3>
+        <select>
+            <option value="kb">KB</option>
+        </select>
+        <input type="number" name="target_size" placeholder="Enter size in KB"><br><br>
+
+        <button type="submit">Compress</button>
+    </form>
+</body>
+</html>
